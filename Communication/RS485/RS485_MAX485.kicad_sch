@@ -1630,124 +1630,6 @@
 				)
 			)
 		)
-		(symbol "PCM_Generic:P,+5"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.27) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 2.54 2.54)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Value" "P,+5"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 0.001 0.001)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 2.54 2.54)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 2.54 2.54)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "+5 positive potential/voltage (global DC power supply node)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "P V + +5 5 positive potential voltage tension global DC power supply node label pin equipotential bonding"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "P,+5_1_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.8288)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.0668 0) (xy 0 1.8288) (xy 1.0668 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+5"
-					(at 0 2.54 0)
-					(effects
-						(font
-							(size 2.54 2.54)
-						)
-						(justify bottom)
-					)
-				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 0) hide
-					(name "+5"
-						(effects
-							(font
-								(size 2.54 2.54)
-							)
-						)
-					)
-					(number "0"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -3079,6 +2961,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 83.82 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48f4654f-363c-4027-96e2-1337f9406b83")
+		(property "Reference" "#PWR03"
+			(at 83.82 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 83.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 83.82 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1002f160-b048-425e-a376-40f48339d738")
+		)
+		(instances
+			(project "RS485_MAX485"
+				(path "/d2205738-90f1-4cc6-a9f2-30b702e72438"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 74.93 96.52 90)
 		(unit 1)
@@ -3208,75 +3156,6 @@
 			(project "test"
 				(path "/d2205738-90f1-4cc6-a9f2-30b702e72438"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_Generic:P,+5")
-		(at 83.82 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54dbacf2-7360-4fcc-9b0f-652246fbb39e")
-		(property "Reference" "#PWR03"
-			(at 86.36 82.55 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "P,+5"
-			(at 83.82 80.01 0)
-			(effects
-				(font
-					(size 0.001 0.001)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 82.55 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 82.55 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "+5 positive potential/voltage (global DC power supply node)"
-			(at 83.82 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "0"
-			(uuid "c5471253-c5f5-47fa-9969-e3a6558fa3e6")
-		)
-		(instances
-			(project ""
-				(path "/d2205738-90f1-4cc6-a9f2-30b702e72438"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
